@@ -1,0 +1,139 @@
+/* Global */
+$color-main: #27ae60;
+$font-text:'Julius Sans One', sans-serif;
+$font-header:'Monda', sans-serif;
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+}    
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section {
+    padding-top: 108px;
+    padding-bottom: 108px;
+}
+.section-title {
+    position: relative;
+    font-size: 36px;
+    margin: 0 0 60px 0;
+    font-family: $font-header;
+}
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 7px;
+    transform: translateX(-50%);
+    background: #27ae60;
+}    
+/* Splash */
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/1681148/pexels-photo-1681148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.splash i {
+    font-size: 30px;
+    background: $color-main;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 50%;
+} 
+.page-title {
+    color: #fa983a;
+    font-size: 40px;
+    margin: 48px 0 0 0;
+    position: relative;
+    font-family: $font-header;
+}
+.page-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 7px;
+    transform: translateX(-50%);
+    background: #27ae60;
+}
+.page-subtitle {
+    color: #fff;
+    font-size: 18px;
+    margin: 48px 0 0 0;
+} 
+/* Intro */
+.intro {
+    background: #fff;
+}
+.intro p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0;
+    font-size: 16px;
+    font-family: Georgia;
+    border-top: solid 5px #d35400;
+    border-bottom: solid 5px #d35400;
+}
+/* About */
+.about {
+    background: #dff9fb;
+}    
+/* Skills */
+[class^="skill-"] {
+    position: relative;
+}
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+.skill-right .skill-image {
+    right: 0;
+}
+.skill-right .skill-description {
+    padding: 26px 55% 26px 0;
+    text-align: right;
+}    
+.skill-left .skill-description {
+    padding: 26px 0 26px 55%;
+    text-align: left;
+}
+.skill-image img:hover {
+    transform: scale(20);
+}
+/* Footer */
+.page-footer {
+    background: #c7ecee;
+}    
